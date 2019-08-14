@@ -1,0 +1,269 @@
+html, body, main{
+    width: 100%;
+    height: 100%;
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+/* ******************************************************************** */
+.heart-body{
+    width: 90%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;  
+    justify-content: center;
+
+}
+.heart img{
+    margin-top: 200px;
+    width: 100px;
+    animation-name: heart;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes heart{
+    0%{
+        width: 200px;
+    }
+    50%{
+        width: 150px;
+    }
+    100%{
+        width: 250px;
+    }
+}
+/* ********************************************************************** */
+.download-direction
+{
+    width: 90%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;  
+    justify-content: center;
+}
+.fater{
+    width: 20%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;  
+    justify-content: center;
+}
+.fater div{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: black;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    box-shadow: 110 110 110 113px #e78267;
+
+}
+
+.direct{
+    margin-left: 110px;
+    animation: direct1 ;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-delay: 0.05s;
+    animation-iteration-count: infinite;
+}
+@keyframes direct1{
+    10%{
+        margin-left: 100px; 
+               
+    }
+    20%{
+        margin-left: 90px;
+        background-color: green;
+    }
+    30%{
+        margin-left: 80px;
+        background-color: rgb(90, 138, 19);
+    }
+    40%{
+        margin-left: 70px;
+        background-color: rgb(97, 150, 17);
+    }
+    50%{
+        margin-left: 60px;
+        background-color: rgb(128, 172, 63);
+    }
+    60%{
+        margin-left: 50px;
+        background-color: greenyellow;
+        margin-top: 50px;
+    }
+    70%{
+        margin-left: 40px;
+        background-color: rgb(95, 145, 20);
+        
+    }
+    80%{
+        margin-left: 30px;
+        background-color: rgb(124, 158, 72);
+        
+    }
+    90%{
+        margin-left: 20px;
+        background-color: rgb(174, 218, 108);
+    }
+    100%{
+        margin-left: 10px;
+        background-color: rgb(143, 224, 143);
+    }
+}
+
+.direct2{
+    margin-left: -110px;
+    animation: direct2 ;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-delay: 0.05s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes direct2{
+    10%{
+        margin-left: -100px;        
+    }
+    20%{
+        margin-left: -90px;
+        background-color: green;
+    }
+    30%{
+        margin-left: -80px;
+        background-color: rgb(90, 138, 19);
+    }
+    40%{
+        margin-left: -70px;
+        background-color: rgb(97, 150, 17);
+    }
+    50%{
+        margin-left: -60px;
+        background-color: rgb(128, 172, 63);
+    }
+    60%{
+        margin-left: -50px;
+        background-color: greenyellow;
+        margin-top: 50px;
+    }
+    70%{
+        margin-left: -40px;
+        background-color: rgb(95, 145, 20);
+    }
+    80%{
+        margin-left: -30px;
+        background-color: rgb(124, 158, 72);
+        margin-bottom: 50px;
+    }
+    90%{
+        margin-left: -20px;
+        background-color: rgb(174, 218, 108)
+    }
+    100%{
+        margin-left: -10px;
+        background-color: rgb(143, 224, 143);
+    }
+}
+/* ***************************************************************** */
+.download{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;  
+    justify-content: center;  
+    width: 20%;
+    height: 200px;
+    background-color: black;
+}
+.download .n1{
+    width: 25%;
+    height: 50px;
+    margin: 5px;
+    /* background-color: aliceblue; */
+    animation: download 2s;
+    animation-duration: 1s;
+    animation-direction: normal;
+}
+@keyframes download{
+    0%{ 
+        background-color: black;
+    }
+    100%{
+        background: aliceblue;
+
+        
+    }
+}
+.download .n2{
+    width: 25%;
+    height: 50px;
+    margin: 5px;
+    /* background-color: aliceblue; */
+    animation: n2 2.5s;
+    animation-duration: 0.9s;
+    animation-direction: normal;
+
+}
+@keyframes n2{
+    0%{ 
+        background: black;
+    }
+    100%{
+        background-color: rgb(127, 127, 206);
+    }
+}
+.download .n3{
+    width: 25%;
+    height: 50px;
+    margin: 5px;
+    /* background-color: aliceblue; */
+    animation:n3;
+    animation-delay: 1s;
+    animation-duration: 0.5s;
+    animation-direction: normal;
+}
+@keyframes n3{
+    form{ 
+        background: rgb(194, 194, 235);
+    }
+    to{
+        background-color: rgb(99, 99, 216);
+    }
+}
+.download .n4{
+    width: 25%;
+    height: 50px;
+    margin: 5px;
+    /* background-color: aliceblue; */
+    animation:n4;
+    animation-delay: 2.01s;
+    animation-duration: 1s;
+    animation-direction: normal;
+}
+@keyframes n4{
+    form{ 
+        background: rgb(83, 83, 233);
+    }
+    to{
+        background-color: rgb(50, 50, 209);
+    }
+}
